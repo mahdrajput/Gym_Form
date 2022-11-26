@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            color: white;
+            background-image: url(bg.jpeg);
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            background-size: 1440px 920px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 24px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 75px;
+        }
+
+        .left div {
+            background-color: black;
+        }
+
+        .mid {
+            display: block;
+            width: 37%;
+            margin: 32px auto;
+            /* border: 2px solid blue; */
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            right: 34px;
+            top: 42px;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+            
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+            
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(167, 226, 236);
+        }
+
+        .btn {
+            background-color: black;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 2px 2px;
+            padding: 5px 5px;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .container{
+            border: 2px solid black;
+            margin: 93px 116px;
+            padding: 7px;
+            width: 41%;
+            border-radius: 20px;
+
+        }
+
+        .container h1{
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .container button{
+            display: block;
+            width: 59%;
+            margin: 7px 116px;
+        }
+        
+        .form-group input{
+            font-family: 'Baloo Bhai 2', cursive ;
+            text-align: center;
+            margin: 7px 113px;
+            padding: 2px;
+            border: 2px solid black;
+            border-radius: 13px;
+            font-size: 17px;
+            width: 319px;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left for Logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>MR Fitness</div>
+        </div>
+
+        <!-- Mid for Navigation Bar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li> <a href="#" class="active">Home</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Services</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Right for Call to Action -->
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join Lahore Best Fitness Center Today</h1>
+        <form action="noaction.php">
+
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Location">
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Contact Number">
+                </div>
+                <button class="btn">Submit Now</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
